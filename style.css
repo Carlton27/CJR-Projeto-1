@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap');
+
+/* colors and images */
+:root {
+    --nav-links-color: #fff;
+    --button-hover-color: #878584;
+    --backoffice-menu-bg: #343a40;
+    --table-head-bg: #e9ecef;
+    --nav-link-hover-color: #f79800;
+    --footer-color: #e3e3e3;
+    --dark-layer: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6));
+    --edit-button-color: #ffa207;
+    --delete-button-color: #dc3545;
+    --pagination-active-bg: #007bff;
+    --header-image: url(./img_bg_backoffice_usuario.jpg);
+    }
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+header {
+    background-image: var(--dark-layer), var(--header-image);
+    background-position:center;
+    background-size: cover;
+    color: var(--nav-links-color);
+    display: flex;
+    height: 38.5vh;
+    box-sizing: content-box;
+    padding: 2% 3%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navBarButton {
+    margin: 1.5rem;
+    cursor: pointer;
+    font-style: normal;
+}
+#menu {
+    background-color: var(--backoffice-menu-bg);
+    list-style: none;
+    display: flex;
+    padding: 5px 5px;
+    color: var(--nav-links-color);
+    font-size: small;
+    padding-left: 3rem;    
+}
+#menu li{
+    margin: 10pt;
+    cursor: pointer;
+}
+
+table {
+    height: 10rem;
+    width:35rem;
+    border-spacing: 0;
+    margin: auto;
+}
+  
+  
+tr {
+    width: 70%;
+    height:15%;
+}
+  
+tr th{
+    background-color: var(--table-head-bg);
+    text-align: left;
+    padding: 1rem;
+}
+  
+td {
+    text-align: left;
+    padding: 2rem;
+}
+
+footer {
+    background-color: var(--footer-color);
+    min-width: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;  
+    width: 100%;
+    height: 2rem;
+    margin-top: 5rem;
+    
+}
+#buttons{
+    justify-content: center;
+    display: flex;
+}
+button{
+    width: 2rem;
+    color: var(--text-color);
+    cursor: pointer;
+    height: 2rem;
+    border-radius: 2px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+button:hover{
+    background-color: var(--button-hover-color);
+}
+.button_excluir{
+    color: var(--delete-button-color);
+    background-color: transparent;
+}
+.button_editar{
+    color: var(--edit-button-color);
+    background-color: transparent;
+}
+.margin{
+    margin: 5rem;
+}
+.footerElement {
+    margin: 5rem;
+}
